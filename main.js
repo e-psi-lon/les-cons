@@ -6,5 +6,5 @@ function con() {
     for (let i = 0; i < clickcount; i++) {
         alert(`Maintenant tu va cliquer comme un con encore ${clickcount - i} fois`)
     }
-    document.getElementById("image").innerHTML = "<img href=\"bon-toutou.webp\">";
+    document.getElementById("image").innerHTML = "<img src=\"bon-toutou.webp\">";
 }
