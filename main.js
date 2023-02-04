@@ -7,5 +7,10 @@ function con() {
         alert(`Maintenant tu va cliquer comme un con encore ${clickcount - i} fois`)
         setTimeout(1000)
     }
-    document.getElementById("image").innerHTML = "<img src=\"bon-toutou.webp\">";
+    if (Math.floor(Math.random() * (2 - 1)) + 1==1) {
+        document.getElementById("image").innerHTML = "<img src=\"bon-toutou.png\">";
+    }
+    else {
+        document.getElementById("image").innerHTML = "<img src=\"bon-toutou-2.png\">";
+    }
 }
