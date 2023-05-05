@@ -1,4 +1,11 @@
-function con() {
+const custom_alert = (message) => {
+    const alert_popup = document.createElement('div')
+    alert_popup.classList.add("popup")
+    alert_popup.innerHTML = `<h3>La page indique</h3><p>${message}<p>`
+}
+
+
+const con = () => {
     let clickcount=prompt("Choisis un nombre entre 100 et 1000")
     while (!(100<=clickcount && clickcount<=1000)) {
         clickcount = prompt(`Choisis un nombre entre 100 et 1000 pas ${clickcount}`)
